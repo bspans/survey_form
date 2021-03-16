@@ -1,0 +1,26 @@
+<html> 
+  <link href="https://fonts.googleapis.com/css?family=Hachi+Maru+Pop" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Yusei+Magic" rel="stylesheet" type="text/css">
+ 
+  <body>
+    <h1 id="title"> Baby Survey </h1>
+    <p id="description"> You can use this survey to track essential information about your baby's development in the first weeks of their lives.</p>
+    <form id="survey-form">
+      <label id="name-label">Name of your baby</label><br /><input type="text" id="name" placeholder="name" required><br />
+      <label id="email-label">e-mail</label><br /><input type="email" id="email" placeholder="your@email.com" required><br />
+      <label id="number-label">Number of nappy's</label><br /><input type="number" id="number" name="nappys" min="0" max="100" placeholder="0-100"><br />
+      <select id="dropdown" name="nappytype">
+      <option value="poo">Poo</option>
+      <option value="pee">Pee</option>
+      <option value="pee_poo">Pee and poo</option>
+      </select><br />
+
+      <input id="number-label" type="number" id="number" name="degrees" min="34" max="42" placeholder="34-42"><br />
+      <label for="happy"><input id="happy" type="checkbox" value="happy" name="mood">Happy</label><br />
+       <label for="sad"><input id="sad" value="sad" type="checkbox" name="mood">Sad</label><br />
+      <label for="breastfed"><input type="radio" name="breastfed" value="breastfed" checked>Breastfed</label>
+      <label for="bottlefed"><input type="radio" name="breastfed" value="breastfed">Bottlefed</label><br />
+      <textarea placeholder"write about the day / night"></textarea>
+        <br />
+        <button type="submit" id="submit">Submit the form</button>
+    </form>
